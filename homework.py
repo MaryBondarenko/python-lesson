@@ -1,10 +1,10 @@
 """
 This is a list of functions that should be completed.
 """
-
 from typing import Any
 from typing import List
 import string
+
 
 class OurAwesomeException(Exception):
     pass
@@ -33,6 +33,7 @@ def is_two_objects_is_the_same_objects(first: Any, second: Any) -> bool:
     """
 
     return first is second
+
 
 def multiple_ints(first_value: int, second_value: int) -> int:
     """
@@ -107,6 +108,7 @@ def some_loop_exercise() -> list:
     """
     Use loop to create list that contain int values from 0 to 12 except 6 and 7
     """
+
     list = []
     for i in range(13):
         if i == 6 or i == 7:
@@ -126,6 +128,7 @@ def remove_from_list_all_negative_numbers(data: List[int]) -> list:
     """
 
     return [o for o in data if o >= 0]
+
 
 def alphabet() -> dict:
     """
