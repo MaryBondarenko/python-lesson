@@ -1,10 +1,10 @@
 """
 This is a list of functions that should be completed.
 """
-import string
+
 from typing import Any
 from typing import List
-
+import string
 
 class OurAwesomeException(Exception):
     pass
@@ -16,8 +16,6 @@ def is_two_object_has_same_value(first: Any, second: Any) -> bool:
     In another case should return False
     """
     return first == second
-    # pass
-
 
 
 def is_two_objects_has_same_type(first: Any, second: Any) -> bool:
@@ -55,8 +53,6 @@ def multiple_ints(first_value: int, second_value: int) -> int:
     else:
         raise ValueError
 
-
-    # return product_of_elements if int(first_value) == int(second_value) else ValueError
 
 def multiple_ints_with_conversion(first_value: Any, second_value: Any) -> int:
     """
@@ -111,14 +107,12 @@ def some_loop_exercise() -> list:
     """
     Use loop to create list that contain int values from 0 to 12 except 6 and 7
     """
-    list=[]
-    for i in range (13):
-        if i==6 or i==7:
+    list = []
+    for i in range(13):
+        if i == 6 or i == 7:
             continue
         list.append(i)
     return list
-
-
 
 
 def remove_from_list_all_negative_numbers(data: List[int]) -> list:
@@ -130,12 +124,8 @@ def remove_from_list_all_negative_numbers(data: List[int]) -> list:
         remove_from_list_all_negative_numbers([1, 5, -7, 8, -1])
         >>> [1, 5, 8]
     """
-    # listp=[]
-    # for i in data:
-    #     if i>=0:
-    #         listp.append(i)
-    #     return listp
-    return [o for o in data if o>=0]
+
+    return [o for o in data if o >= 0]
 
 def alphabet() -> dict:
     """
@@ -145,20 +135,6 @@ def alphabet() -> dict:
         alphabet()
         >>> {1: "a", 2: "b" ...}
     """
-    # namb_list=[]
-    # for i in range(1, 27):
-    #     namb_list.append(i)
-    # # print(new_list)
-    # char_list=[]
-    # for i in range(97,123):
-    #     char_list.append (chr(i))
-    # # print(new_new_list)
-    # a=0
-    # b=0
-    # dic={}
-    # for x in range(26):
-    #     dic.update({namb_list[x] : char_list[x]})
-    # return dic
 
     import string
     values = list(string.ascii_lowercase)
@@ -182,4 +158,3 @@ def simple_sort(data: List[int]) -> List[list]:
             if data[k] < data[k - 1]:
                 data[k], data[k - 1] = data[k - 1], data[k]
     return data
-
