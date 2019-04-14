@@ -3,7 +3,6 @@ This is a list of functions that should be completed.
 """
 from typing import Any
 from typing import List
-import string
 
 
 class OurAwesomeException(Exception):
@@ -31,7 +30,6 @@ def is_two_objects_is_the_same_objects(first: Any, second: Any) -> bool:
     If @first and @second has same type should return True
     In another case should return False
     """
-
     return first is second
 
 
@@ -126,7 +124,6 @@ def remove_from_list_all_negative_numbers(data: List[int]) -> list:
         remove_from_list_all_negative_numbers([1, 5, -7, 8, -1])
         >>> [1, 5, 8]
     """
-
     return [o for o in data if o >= 0]
 
 
@@ -138,7 +135,6 @@ def alphabet() -> dict:
         alphabet()
         >>> {1: "a", 2: "b" ...}
     """
-
     import string
     values = list(string.ascii_lowercase)
     keys = range(1, 27)
@@ -155,9 +151,9 @@ def simple_sort(data: List[int]) -> List[list]:
     Returns:
 
     """
-
     for a in range(len(data)):
         for k in range(1, len(data)):
             if data[k] < data[k - 1]:
                 data[k], data[k - 1] = data[k - 1], data[k]
     return data
+
